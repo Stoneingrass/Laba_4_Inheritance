@@ -2,13 +2,13 @@ package laba2;
 
 /* Describes Cart object contains items */
 
-public class Cart {
+public class CartQueue {
     //fields
     private Item[] stack;    //stack of items
     private int itemNumber;    //current number of items in the cart
 
     //constructor; argument is maximum number of items in the stack
-    public Cart(int maxItemNumber) {
+    public CartQueue(int maxItemNumber) {
         stack=new Item[maxItemNumber];
         itemNumber=0;
     }
@@ -31,7 +31,10 @@ public class Cart {
     }
     private void add(Item item) {
         if (isStackFull ()) return;
-        stack[itemNumber]=item;
+        for (int i=itemNumber-1; i>=0; i--) {
+            stack[i+1]=stack[i];
+        }
+        stack[0]=item;
         itemNumber++;
     }
 
@@ -41,6 +44,9 @@ public class Cart {
     }
     private void delete() {
         if (isStackEmpty()) return;
+        for (int i=0; i<itemNumber-1; i++) {
+            stack[i]=stack[i+1];
+        }
         stack[itemNumber-1]=null;
         itemNumber--;
     }

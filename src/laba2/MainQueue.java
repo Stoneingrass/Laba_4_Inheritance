@@ -2,7 +2,7 @@ package laba2;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainQueue {
     public static void main(String[] args) {
         Cart basket;
 
