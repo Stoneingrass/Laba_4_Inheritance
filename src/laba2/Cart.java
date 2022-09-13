@@ -1,6 +1,6 @@
 package laba2;
 
-/* Describes Cart object contains items */
+/* Describes Cart object contains items. Realized by stack. */
 
 public class Cart {
     //fields

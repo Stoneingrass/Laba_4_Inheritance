@@ -1,6 +1,6 @@
 package laba2;
 
-/* Describes Cart object contains items */
+/* Describes Cart object contains items. Realized by queue. */
 
 public class CartQueue {
     //fields

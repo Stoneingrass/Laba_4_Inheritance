@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="ended">
+    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="fixed: in MainQueue: class Cart replased by CartQueue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laba2/MainQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laba2/MainQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662926444495</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed: in MainQueue: class Cart replased by CartQueue">
+      <created>1663061762117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663061762117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added item and cart classes" />
     <MESSAGE value="ended" />
-    <option name="LAST_COMMIT_MESSAGE" value="ended" />
+    <MESSAGE value="fixed: in MainQueue: class Cart replased by CartQueue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: in MainQueue: class Cart replased by CartQueue" />
   </component>
 </project>
