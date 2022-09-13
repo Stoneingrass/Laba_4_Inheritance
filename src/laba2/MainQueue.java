@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MainQueue {
     public static void main(String[] args) {
-        Cart basket;
+        CartQueue basket;
 
         basket = inputItems();
 
@@ -25,9 +25,9 @@ public class MainQueue {
     }
 
     //adding items to cart
-    public static Cart inputItems() {
+    public static CartQueue inputItems() {
         int itemNumber;
-        Cart basket;
+        CartQueue basket;
         Scanner nameScanner = new Scanner(System.in);
         Scanner numberScanner = new Scanner(System.in);
 
@@ -39,7 +39,7 @@ public class MainQueue {
         } while (itemNumber <= 0);
 
         //cart initialisation
-        basket = new Cart(itemNumber);
+        basket = new CartQueue(itemNumber);
 
         //cart filling by items
         for (int i = 0; i < itemNumber; i++) {
@@ -55,7 +55,7 @@ public class MainQueue {
     }
 
     //outputting of the cart
-    public static void outputCart (Cart basket) {
+    public static void outputCart (CartQueue basket) {
         for (int i=0; i<basket.getItemNumber(); i++) {
             System.out.println("Item #" + (i + 1) + ": " + basket.getStack()[i].getName() + " - " + basket.getStack()[i].getPrice());
         }
