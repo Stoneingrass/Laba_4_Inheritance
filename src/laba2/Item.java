@@ -10,7 +10,7 @@ public class Item {
     public Item (String name, float price) {
         this.name=name;
         this.price=price;
-        isPriceNegative();
+        nullingPriceIfPriceIsNegative();
     }
 
 
@@ -28,7 +28,7 @@ public class Item {
     }
     public void setPrice(float price) {
         this.price=price;
-        isPriceNegative();
+        nullingPriceIfPriceIsNegative();
     }
 
 
@@ -40,7 +40,7 @@ public class Item {
     }
     private void decrease(float percent) {
         price-=price*percent/100;
-        isPriceNegative();
+        nullingPriceIfPriceIsNegative();
     }
 
     //increase in price by a certain percentage
@@ -49,13 +49,14 @@ public class Item {
     }
     private void increase(float percent) {
         price+=price*percent/100;
+        nullingPriceIfPriceIsNegative();
     }
 
 
     //private methods
 
     //price negativity test
-    private void isPriceNegative() {
+    private void nullingPriceIfPriceIsNegative() {
         if (price<0) {
             price=0;
         }
