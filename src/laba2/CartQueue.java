@@ -38,10 +38,7 @@ public class CartQueue {
     //removes the element at the end of the stack (cart)
     public void deleteItem() {
         if (isStackEmpty()) return;
-        for (int i=0; i<itemNumber-1; i++) {
-            stack[i]=stack[i+1];
-        }
-        stack[itemNumber-1]=null;
+        stack[itemNumber]=null;
         itemNumber--;
     }
 
