@@ -27,9 +27,6 @@ public class Cart {
 
     //adds an element to the end of the stack (cart)
     public void addItem(Item item) {
-        add(item);
-    }
-    private void add(Item item) {
         if (isStackFull ()) return;
         stack[itemNumber]=item;
         itemNumber++;
@@ -37,9 +34,6 @@ public class Cart {
 
     //removes the element at the end of the stack (cart)
     public void deleteItem() {
-        delete();
-    }
-    private void delete() {
         if (isStackEmpty()) return;
         stack[itemNumber-1]=null;
         itemNumber--;
@@ -47,9 +41,6 @@ public class Cart {
 
     //calculates the total cost of items in the cart
     public float sumItemPrice() {
-        return sum();
-    }
-    private float sum() {
         float sum=0;          //sum of item prices
         for (Item item : stack) {
             sum += item.getPrice();
@@ -59,9 +50,6 @@ public class Cart {
 
     //increase the price of all items in the cart by a certain percentage
     public void increaseAllItemPrice(float percent) {
-        increase(percent);
-    }
-    private void increase(float percent) {
         for (Item item : stack) {
             item.increasePrice(percent);
         }
@@ -69,9 +57,6 @@ public class Cart {
 
     //decrease the price of all items in the cart by a certain percentage
     public void decreaseAllItemPrice(float percent) {
-        decrease(percent);
-    }
-    private void decrease(float percent) {
         for (Item item : stack) {
             item.decreasePrice(percent);
         }

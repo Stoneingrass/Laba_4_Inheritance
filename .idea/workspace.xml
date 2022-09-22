@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="comments updated">
+    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="refactor method name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/laba2/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laba2/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663064155307</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor method name">
+      <created>1663116267243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663116267243</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +114,7 @@
     <MESSAGE value="ended" />
     <MESSAGE value="fixed: in MainQueue: class Cart replased by CartQueue" />
     <MESSAGE value="comments updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments updated" />
+    <MESSAGE value="refactor method name" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor method name" />
   </component>
 </project>
