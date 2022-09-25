@@ -1,4 +1,4 @@
-package laba2;
+package laba4;
 
 /* Describes item object has a name and a price */
 public class Item {

@@ -1,14 +1,14 @@
-package laba2;
+package laba4;
 
-/* Describes Cart object contains items. Realized by stack. */
+/* Describes Cart object contains items. Realized by queue. */
 
-public class Cart {
+public class CartQueue {
     //fields
     private Item[] stack;    //stack of items
     private int itemNumber;    //current number of items in the cart
 
     //constructor; argument is maximum number of items in the stack
-    public Cart(int maxItemNumber) {
+    public CartQueue(int maxItemNumber) {
         stack=new Item[maxItemNumber];
         itemNumber=0;
     }
@@ -28,14 +28,17 @@ public class Cart {
     //adds an element to the end of the stack (cart)
     public void addItem(Item item) {
         if (isStackFull ()) return;
-        stack[itemNumber]=item;
+        for (int i=itemNumber-1; i>=0; i--) {
+            stack[i+1]=stack[i];
+        }
+        stack[0]=item;
         itemNumber++;
     }
 
     //removes the element at the end of the stack (cart)
     public void deleteItem() {
         if (isStackEmpty()) return;
-        stack[itemNumber-1]=null;
+        stack[itemNumber]=null;
         itemNumber--;
     }
 
