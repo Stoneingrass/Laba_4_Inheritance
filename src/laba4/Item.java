@@ -5,11 +5,13 @@ public class Item {
     //fields
     private String name;    //item name
     private float price;    //item price
+    private float quantity; //item quantity
 
     //constructor
-    public Item (String name, float price) {
+    public Item (String name, float price, float quantity) {
         this.name=name;
         this.price=price;
+        this.quantity=quantity;
         nullingPriceIfPriceIsNegative();
     }
 
@@ -21,6 +23,9 @@ public class Item {
     public float getPrice() {
         return price;
     }
+    public float getQuantity() {
+        return quantity;
+    }
 
     //setters
     public void setName(String name) {
@@ -30,24 +35,20 @@ public class Item {
         this.price=price;
         nullingPriceIfPriceIsNegative();
     }
-
+    public void setQuantity(float quantity) {
+        this.quantity = quantity;
+    }
 
     //public methods (interface)
 
     //decrease in price by a certain percentage
     public void decreasePrice(float percent) {
-        decrease(percent);
-    }
-    private void decrease(float percent) {
         price-=price*percent/100;
         nullingPriceIfPriceIsNegative();
     }
 
     //increase in price by a certain percentage
     public void increasePrice(float percent) {
-        increase(percent);
-    }
-    private void increase(float percent) {
         price+=price*percent/100;
         nullingPriceIfPriceIsNegative();
     }

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="edited deleting item from queue cart" />
+    <list default="true" id="672ff680-0e8c-4e7e-b121-10df66200154" name="Changes" comment="refactored">
+      <change afterPath="$PROJECT_DIR$/src/laba4/BillForRegular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/laba4/ItemWithDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laba4/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laba4/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laba4/CartQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laba4/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laba4/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laba4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/laba4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/laba4/MainQueue.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/asdfe/IdeaProjects/Laba 2 - Classes",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="laba2" />
@@ -107,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663876968997</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactored">
+      <created>1664111849888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664111849888</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +149,7 @@
     <MESSAGE value="refactor method name" />
     <MESSAGE value="deleted &quot;class interface&quot;" />
     <MESSAGE value="edited deleting item from queue cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited deleting item from queue cart" />
+    <MESSAGE value="refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored" />
   </component>
 </project>

@@ -4,30 +4,45 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Cart basket;
+        Scanner scanner = new Scanner(System.in);
 
-        basket = inputItems();
+        Bill bill;
 
-        System.out.println("\nThe cart:");
-        outputCart(basket);
+        int input;
+        boolean isExit=false;
 
-        System.out.println("Sum of prices of all items in the cart: " + basket.sumItemPrice());
+        do {
+            System.out.println("\nAre you a regular customer?");
+            System.out.println("1. Yes.");
+            System.out.println("2. No.");
+            System.out.println("3. Exit.");
 
-        System.out.println("\nIncreasing a price by 15%: ");
-        basket.increaseAllItemPrice(15);
-        outputCart(basket);
-        System.out.println("Sum of prices of all items in the cart: " + basket.sumItemPrice());
+            input= scanner.nextInt();
 
-        System.out.println("\nDecreasing a price by 30%: ");
-        basket.decreaseAllItemPrice(30);
-        outputCart(basket);
-        System.out.println("Sum of prices of all items in the cart: " + basket.sumItemPrice());
+            switch (input) {
+                case 1:
+
+                    break;
+                case 2:
+
+
+                    break;
+                case 3:
+                    isExit=true;
+                    break;
+                default:
+                    System.out.println("You choose incorrect option, retry please.");
+            }
+        } while (!isExit);
+
     }
+/*
+    //adding items to Bill
+    public static Bill inputItems() {
 
-    //adding items to cart
-    public static Cart inputItems() {
+
         int itemNumber;
-        Cart basket;
+        Bill basket;
         Scanner nameScanner = new Scanner(System.in);
         Scanner numberScanner = new Scanner(System.in);
 
@@ -39,7 +54,7 @@ public class Main {
         } while (itemNumber <= 0);
 
         //cart initialisation
-        basket = new Cart(itemNumber);
+        basket = new Bill(itemNumber);
 
         //cart filling by items
         for (int i = 0; i < itemNumber; i++) {
@@ -55,9 +70,10 @@ public class Main {
     }
 
     //outputting of the cart
-    public static void outputCart (Cart basket) {
+    public static void outputCart (Bill basket) {
         for (int i=0; i<basket.getItemNumber(); i++) {
             System.out.println("Item #" + (i + 1) + ": " + basket.getStack()[i].getName() + " - " + basket.getStack()[i].getPrice());
         }
     }
+    */
 }
