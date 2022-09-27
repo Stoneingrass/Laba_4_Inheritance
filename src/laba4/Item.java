@@ -1,6 +1,7 @@
 package laba4;
 
 /* Describes item object has a name and a price */
+
 public class Item {
     //fields
     private String name;    //item name
@@ -14,7 +15,6 @@ public class Item {
         this.quantity=quantity;
         nullingPriceIfPriceIsNegative();
     }
-
 
     //getters
     public String getName() {
@@ -39,6 +39,9 @@ public class Item {
         this.quantity = quantity;
     }
 
+
+
+
     //public methods (interface)
 
     //decrease in price by a certain percentage
@@ -52,6 +55,8 @@ public class Item {
         price+=price*percent/100;
         nullingPriceIfPriceIsNegative();
     }
+
+
 
 
     //private methods

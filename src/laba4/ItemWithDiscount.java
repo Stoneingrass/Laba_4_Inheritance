@@ -1,6 +1,7 @@
 package laba4;
 
-//describes item class has discount
+/* Describes item class has discount. */
+
 public class ItemWithDiscount extends Item {
     //fields
     private float discount; //discount in money points

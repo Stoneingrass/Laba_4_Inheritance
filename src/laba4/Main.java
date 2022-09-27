@@ -6,74 +6,65 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Bill bill;
+        Bill bill=new Bill();
 
         int input;
         boolean isExit=false;
 
-        do {
-            System.out.println("\nAre you a regular customer?");
-            System.out.println("1. Yes.");
-            System.out.println("2. No.");
-            System.out.println("3. Exit.");
+        //choosing customer category
+        System.out.println("Are you a regular customer?");
+        System.out.println("1. Yes.");
+        System.out.println("2. No.");
+        System.out.println("3. Exit.");
 
+        input= scanner.nextInt();
+
+        if (input==3) {
+            return;
+        }
+
+        //creating corresponding bill class
+        switch (input) {
+            case 1:
+                bill = new BillForRegular();
+                break;
+            case 2:
+                bill = new Bill();
+                break;
+            default:
+                System.out.println("You choose incorrect option, retry please.");
+        }
+
+        do {
+
+            //available operations with bill
+            System.out.println("\nChoose operation you need:");
+            System.out.println("1. Create a bill from scratch.");
+            System.out.println("2. Add item to the bill.");
+            System.out.println("3. Delete item from the bill.");
+            System.out.println("4. Output final bill.");
+            System.out.println("5. Exit.");
             input= scanner.nextInt();
 
             switch (input) {
                 case 1:
-
+                    bill.inputBill();
                     break;
                 case 2:
-
-
+                    bill.addItem(bill.getItemNumber());
                     break;
                 case 3:
+                    bill.deleteItem();
+                    break;
+                case 4:
+                    bill.outputBill();
+                    break;
+                case 5:
                     isExit=true;
                     break;
                 default:
                     System.out.println("You choose incorrect option, retry please.");
             }
         } while (!isExit);
-
     }
-/*
-    //adding items to Bill
-    public static Bill inputItems() {
-
-
-        int itemNumber;
-        Bill basket;
-        Scanner nameScanner = new Scanner(System.in);
-        Scanner numberScanner = new Scanner(System.in);
-
-        //input number of items in the cart
-        do {
-            System.out.println("Input items number in the cart (>0):");
-            itemNumber = numberScanner.nextInt();
-            if (itemNumber <= 0) System.out.println("Please, input a number more than 0.");
-        } while (itemNumber <= 0);
-
-        //cart initialisation
-        basket = new Bill(itemNumber);
-
-        //cart filling by items
-        for (int i = 0; i < itemNumber; i++) {
-            System.out.println("\nInput name of item #" + (i + 1));
-            String name = nameScanner.nextLine();
-            System.out.println("Input price of item #" + (i + 1));
-            float price = numberScanner.nextFloat();
-
-            basket.addItem(new Item(name, price));
-        }
-
-        return basket;
-    }
-
-    //outputting of the cart
-    public static void outputCart (Bill basket) {
-        for (int i=0; i<basket.getItemNumber(); i++) {
-            System.out.println("Item #" + (i + 1) + ": " + basket.getStack()[i].getName() + " - " + basket.getStack()[i].getPrice());
-        }
-    }
-    */
 }
